@@ -15,6 +15,13 @@
 		09F7E61F1C488C8D00D2FC44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09F7E61D1C488C8D00D2FC44 /* LaunchScreen.storyboard */; };
 		09F7E62A1C488C8D00D2FC44 /* SJTableViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F7E6291C488C8D00D2FC44 /* SJTableViewDemoTests.m */; };
 		09F7E6351C488C8D00D2FC44 /* SJTableViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F7E6341C488C8D00D2FC44 /* SJTableViewDemoUITests.m */; };
+		09F7E6451C48925400D2FC44 /* UIView+LBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F7E6441C48925400D2FC44 /* UIView+LBExtension.m */; };
+		09F7E6481C48EA2200D2FC44 /* SJBasicTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F7E6471C48EA2200D2FC44 /* SJBasicTableView.m */; };
+		09F7E64D1C48F84000D2FC44 /* GPStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F7E64A1C48F84000D2FC44 /* GPStatus.m */; };
+		09F7E64E1C48F84000D2FC44 /* GPStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F7E64C1C48F84000D2FC44 /* GPStatusCell.m */; };
+		09F7E6531C48F8BD00D2FC44 /* SJCustomCellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F7E6521C48F8BD00D2FC44 /* SJCustomCellVC.m */; };
+		09F7E6551C48F90600D2FC44 /* statuses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09F7E6541C48F90600D2FC44 /* statuses.plist */; };
+		09F7E6591C48FD9700D2FC44 /* SJTabSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F7E6581C48FD9700D2FC44 /* SJTabSearchVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,19 @@
 		09F7E6301C488C8D00D2FC44 /* SJTableViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SJTableViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		09F7E6341C488C8D00D2FC44 /* SJTableViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJTableViewDemoUITests.m; sourceTree = "<group>"; };
 		09F7E6361C488C8D00D2FC44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09F7E6431C48925400D2FC44 /* UIView+LBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LBExtension.h"; sourceTree = "<group>"; };
+		09F7E6441C48925400D2FC44 /* UIView+LBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LBExtension.m"; sourceTree = "<group>"; };
+		09F7E6461C48EA2200D2FC44 /* SJBasicTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJBasicTableView.h; sourceTree = "<group>"; };
+		09F7E6471C48EA2200D2FC44 /* SJBasicTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJBasicTableView.m; sourceTree = "<group>"; };
+		09F7E6491C48F84000D2FC44 /* GPStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GPStatus.h; path = Category/GPStatus.h; sourceTree = "<group>"; };
+		09F7E64A1C48F84000D2FC44 /* GPStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPStatus.m; path = Category/GPStatus.m; sourceTree = "<group>"; };
+		09F7E64B1C48F84000D2FC44 /* GPStatusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GPStatusCell.h; path = Category/GPStatusCell.h; sourceTree = "<group>"; };
+		09F7E64C1C48F84000D2FC44 /* GPStatusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GPStatusCell.m; path = Category/GPStatusCell.m; sourceTree = "<group>"; };
+		09F7E6511C48F8BD00D2FC44 /* SJCustomCellVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJCustomCellVC.h; sourceTree = "<group>"; };
+		09F7E6521C48F8BD00D2FC44 /* SJCustomCellVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJCustomCellVC.m; sourceTree = "<group>"; };
+		09F7E6541C48F90600D2FC44 /* statuses.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = statuses.plist; sourceTree = "<group>"; };
+		09F7E6571C48FD9700D2FC44 /* SJTabSearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJTabSearchVC.h; sourceTree = "<group>"; };
+		09F7E6581C48FD9700D2FC44 /* SJTabSearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJTabSearchVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +121,10 @@
 		09F7E60E1C488C8D00D2FC44 /* SJTableViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				09F7E6561C48FD5E00D2FC44 /* SJTabSearchVC */,
+				09F7E6501C48F89500D2FC44 /* BasicTableView */,
+				09F7E64F1C48F86500D2FC44 /* CustomCell */,
+				09F7E6421C48925400D2FC44 /* Category */,
 				09F7E6121C488C8D00D2FC44 /* AppDelegate.h */,
 				09F7E6131C488C8D00D2FC44 /* AppDelegate.m */,
 				09F7E6151C488C8D00D2FC44 /* ViewController.h */,
@@ -138,6 +162,47 @@
 				09F7E6361C488C8D00D2FC44 /* Info.plist */,
 			);
 			path = SJTableViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		09F7E6421C48925400D2FC44 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				09F7E6431C48925400D2FC44 /* UIView+LBExtension.h */,
+				09F7E6441C48925400D2FC44 /* UIView+LBExtension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		09F7E64F1C48F86500D2FC44 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				09F7E6541C48F90600D2FC44 /* statuses.plist */,
+				09F7E6491C48F84000D2FC44 /* GPStatus.h */,
+				09F7E64A1C48F84000D2FC44 /* GPStatus.m */,
+				09F7E64B1C48F84000D2FC44 /* GPStatusCell.h */,
+				09F7E64C1C48F84000D2FC44 /* GPStatusCell.m */,
+				09F7E6511C48F8BD00D2FC44 /* SJCustomCellVC.h */,
+				09F7E6521C48F8BD00D2FC44 /* SJCustomCellVC.m */,
+			);
+			name = CustomCell;
+			sourceTree = "<group>";
+		};
+		09F7E6501C48F89500D2FC44 /* BasicTableView */ = {
+			isa = PBXGroup;
+			children = (
+				09F7E6461C48EA2200D2FC44 /* SJBasicTableView.h */,
+				09F7E6471C48EA2200D2FC44 /* SJBasicTableView.m */,
+			);
+			name = BasicTableView;
+			sourceTree = "<group>";
+		};
+		09F7E6561C48FD5E00D2FC44 /* SJTabSearchVC */ = {
+			isa = PBXGroup;
+			children = (
+				09F7E6571C48FD9700D2FC44 /* SJTabSearchVC.h */,
+				09F7E6581C48FD9700D2FC44 /* SJTabSearchVC.m */,
+			);
+			name = SJTabSearchVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +267,7 @@
 		09F7E6041C488C8D00D2FC44 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SJ;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = SPIREJ;
 				TargetAttributes = {
@@ -243,6 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09F7E6551C48F90600D2FC44 /* statuses.plist in Resources */,
 				09F7E61F1C488C8D00D2FC44 /* LaunchScreen.storyboard in Resources */,
 				09F7E61C1C488C8D00D2FC44 /* Assets.xcassets in Resources */,
 				09F7E61A1C488C8D00D2FC44 /* Main.storyboard in Resources */,
@@ -270,8 +337,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09F7E6591C48FD9700D2FC44 /* SJTabSearchVC.m in Sources */,
+				09F7E64D1C48F84000D2FC44 /* GPStatus.m in Sources */,
 				09F7E6171C488C8D00D2FC44 /* ViewController.m in Sources */,
+				09F7E6481C48EA2200D2FC44 /* SJBasicTableView.m in Sources */,
 				09F7E6141C488C8D00D2FC44 /* AppDelegate.m in Sources */,
+				09F7E6531C48F8BD00D2FC44 /* SJCustomCellVC.m in Sources */,
+				09F7E64E1C48F84000D2FC44 /* GPStatusCell.m in Sources */,
+				09F7E6451C48925400D2FC44 /* UIView+LBExtension.m in Sources */,
 				09F7E6111C488C8D00D2FC44 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
