@@ -10,13 +10,14 @@
 #import "SJBasicTableView.h"
 #import "SJCustomCellVC.h"
 #import "SJTabSearchVC.h"
+#import "SJDeleteTabCellVC.h"
 
 #define kDeviceWidth  [UIScreen mainScreen].bounds.size.width
 #define kDeviceHeight  [UIScreen mainScreen].bounds.size.height
 #define cellHeight 70
 
-#define kLabelTitles @[@"1- TableView基本代理方法，属性",@"2- 纯代码自定义类似微博界面cell",@"3- TableView右侧的索引栏示例"]
-#define kDetialLabelText @[@"SJBasicTableView",@"SJCustomCellVC",@"SJTabSearchVC.h"]
+#define kLabelTitles @[@"1- TableView基本代理方法，属性",@"2- 纯代码自定义类似微博界面cell",@"3- TableView右侧的索引栏示例", @"4- 编辑 - 删除操作"]
+#define kDetialLabelText @[@"SJBasicTableView",@"SJCustomCellVC",@"SJTabSearchVC",@"SJDeleteTabCellVC"]
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong) UITableView *tableView;
@@ -102,6 +103,12 @@
         {
             SJTabSearchVC *tabSearchVC = [[SJTabSearchVC alloc] init];
             [self.navigationController pushViewController:tabSearchVC animated:YES];
+        }
+            break;
+        case 3:
+        {
+            SJDeleteTabCellVC *deleteVC = [[SJDeleteTabCellVC alloc] init];
+            [self.navigationController pushViewController:deleteVC animated:YES];
         }
             break;
 

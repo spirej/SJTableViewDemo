@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09CA05AD1C4C895B005FF14B /* SJDeleteTabCellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CA05AC1C4C895B005FF14B /* SJDeleteTabCellVC.m */; };
 		09F7E6111C488C8D00D2FC44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F7E6101C488C8D00D2FC44 /* main.m */; };
 		09F7E6141C488C8D00D2FC44 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F7E6131C488C8D00D2FC44 /* AppDelegate.m */; };
 		09F7E6171C488C8D00D2FC44 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F7E6161C488C8D00D2FC44 /* ViewController.m */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09CA05AB1C4C895B005FF14B /* SJDeleteTabCellVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJDeleteTabCellVC.h; sourceTree = "<group>"; };
+		09CA05AC1C4C895B005FF14B /* SJDeleteTabCellVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJDeleteTabCellVC.m; sourceTree = "<group>"; };
 		09F7E60C1C488C8D00D2FC44 /* SJTableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJTableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09F7E6101C488C8D00D2FC44 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		09F7E6121C488C8D00D2FC44 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -98,6 +101,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09CA05AA1C4C8909005FF14B /* SJDeleteTabCell */ = {
+			isa = PBXGroup;
+			children = (
+				09CA05AB1C4C895B005FF14B /* SJDeleteTabCellVC.h */,
+				09CA05AC1C4C895B005FF14B /* SJDeleteTabCellVC.m */,
+			);
+			name = SJDeleteTabCell;
+			sourceTree = "<group>";
+		};
 		09F7E6031C488C8D00D2FC44 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +133,7 @@
 		09F7E60E1C488C8D00D2FC44 /* SJTableViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				09CA05AA1C4C8909005FF14B /* SJDeleteTabCell */,
 				09F7E6561C48FD5E00D2FC44 /* SJTabSearchVC */,
 				09F7E6501C48F89500D2FC44 /* BasicTableView */,
 				09F7E64F1C48F86500D2FC44 /* CustomCell */,
@@ -341,6 +354,7 @@
 				09F7E64D1C48F84000D2FC44 /* GPStatus.m in Sources */,
 				09F7E6171C488C8D00D2FC44 /* ViewController.m in Sources */,
 				09F7E6481C48EA2200D2FC44 /* SJBasicTableView.m in Sources */,
+				09CA05AD1C4C895B005FF14B /* SJDeleteTabCellVC.m in Sources */,
 				09F7E6141C488C8D00D2FC44 /* AppDelegate.m in Sources */,
 				09F7E6531C48F8BD00D2FC44 /* SJCustomCellVC.m in Sources */,
 				09F7E64E1C48F84000D2FC44 /* GPStatusCell.m in Sources */,
@@ -571,6 +585,7 @@
 				09F7E63B1C488C8D00D2FC44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09F7E63C1C488C8D00D2FC44 /* Build configuration list for PBXNativeTarget "SJTableViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -579,6 +594,7 @@
 				09F7E63E1C488C8D00D2FC44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09F7E63F1C488C8D00D2FC44 /* Build configuration list for PBXNativeTarget "SJTableViewDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -587,6 +603,7 @@
 				09F7E6411C488C8D00D2FC44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
