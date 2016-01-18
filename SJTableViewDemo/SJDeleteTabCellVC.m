@@ -13,12 +13,8 @@
 #define kDeviceHeight  [UIScreen mainScreen].bounds.size.height
 #define cellHeight 60
 
-#define kItems @[@[@"HiBOasd",@"Hasdhjbaj",@"Hsjhdyw"],@[@"Jsjdak",@"Jack"],@[@"Miasd",@"Masdhjbaj",@"Money",@"Msoshyw"], @[@"Ssanat", @"Sdouua"], @[@"Wangjiba"]]
-
-#define kDetialLabText   @[@[@"18613376888",@"18613376888",@"18613376888"],@[@"18613376888",@"18613376888"],@[@"18613376888",@"18613376888",@"18613376888",@"18613376888"], @[@"18613376888", @"18613376888"], @[@"18613376888"]]
-
-#define kHeaderTitle  @[@"H",@"J",@"M",@"S",@"W"]
-#define kFooterTitle   @[@"H footer title",@"J footer title",@"M footer title",@"S footer title",@"W footer title"]
+#define kItems @[@"HiBOasd",@"Hasdhjbaj",@"Hsjhdyw",@"Jsjdak",@"Jack",@"Miasd",@"Masdhjbaj",@"Money",@"Msoshyw", @"Ssanat", @"Sdouua", @"Wangjiba"]
+#define kDetails @[@"18613376888",@"18613376888",@"18613376888",@"18613376888",@"18613376888",@"18613376888",@"18613376888",@"18613376888",@"18613376888", @"18613376888", @"18613376888", @"18613376888"]
 
 @interface SJDeleteTabCellVC ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong) UITableView *tableView;
@@ -36,7 +32,7 @@
 }
 - (NSMutableArray *)detailArray{
     if (!_detailArray) {
-        _detailArray = [NSMutableArray arrayWithArray:kDetialLabText];
+        _detailArray = [NSMutableArray arrayWithArray:kDetails];
     }
     return _detailArray;
 }
@@ -60,31 +56,11 @@
     [self detailArray];
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 5;
+    return 1;
 }
 //每组显示多少行cell数据
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    switch (section) {
-        case 0:
-            return 3;
-            break;
-        case 1:
-            return 2;
-            break;
-        case 2:
-            return 4;
-            break;
-        case 3:
-            return 2;
-            break;
-        case 4:
-            return 1;
-            break;
-            
-        default:
-            break;
-    }
-    return 3;
+    return _titleArray.count;
 }
 //cell内容设置，属性设置
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -94,8 +70,8 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:identifily];
 //        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
-    cell.textLabel.text = _titleArray[indexPath.section][indexPath.row];
-//    cell.detailTextLabel.text = _detailArray[indexPath.section][indexPath.row];
+    cell.textLabel.text = _titleArray[indexPath.row];
+//    cell.detailTextLabel.text = _detailArray[indexPath.row];
     return cell;
 }
 
@@ -105,28 +81,14 @@
     return cellHeight;
 }
 
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-    return kHeaderTitle[section];
-}
-- (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section{
-    return kFooterTitle[section];
-}
-#pragma mark - 返回每组标题索引
-- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView{
-    NSMutableArray *indexs = [[NSMutableArray alloc] init];
-    for (int i = 0; i < kHeaderTitle.count; i++) {
-        [indexs addObject:kHeaderTitle[i]];
-    }
-    return indexs;
-}
+
 //删除
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [_titleArray removeObject:_titleArray[indexPath.section][indexPath.row]];
-        [_detailArray removeObject:_detailArray[indexPath.section][indexPath.row]];
-//        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationBottom];
-        [tableView reloadData];
-        
+        [_titleArray removeObject:_titleArray[indexPath.row]];
+//        [_detailArray removeObject:_detailArray[indexPath.row]];
+
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationBottom];
     }
 }
 //排序
