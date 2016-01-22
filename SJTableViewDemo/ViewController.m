@@ -11,13 +11,15 @@
 #import "SJCustomCellVC.h"
 #import "SJTabSearchVC.h"
 #import "SJDeleteTabCellVC.h"
+#import "SJTabHeaderController.h"
+#import "SJTabSortController.h"
 
 #define kDeviceWidth  [UIScreen mainScreen].bounds.size.width
 #define kDeviceHeight  [UIScreen mainScreen].bounds.size.height
 #define cellHeight 70
 
-#define kLabelTitles @[@"1- TableView基本代理方法，属性",@"2- 纯代码自定义类似微博界面cell",@"3- TableView右侧的索引栏示例", @"4- 编辑 - 删除操作"]
-#define kDetialLabelText @[@"SJBasicTableView",@"SJCustomCellVC",@"SJTabSearchVC",@"SJDeleteTabCellVC"]
+#define kLabelTitles @[@"1- TableView基本代理方法，属性",@"2- 纯代码自定义类似微博界面cell",@"3- TableView右侧的索引栏示例", @"4- 编辑 - 删除操作",@"5- 编辑 - 删除、排序操作",@"6- tabHeader下拉拉伸上滑显示navigation"]
+#define kDetialLabelText @[@"SJBasicTableView",@"SJCustomCellVC",@"SJTabSearchVC",@"SJDeleteTabCellVC", @"SJTabSortController",@"SJTabHeaderController"]
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property(nonatomic, strong) UITableView *tableView;
@@ -111,6 +113,19 @@
             [self.navigationController pushViewController:deleteVC animated:YES];
         }
             break;
+        case 4:
+        {
+            SJTabSortController *tabSortVC = [[SJTabSortController alloc] init];
+            [self.navigationController pushViewController:tabSortVC animated:YES];
+        }
+            break;
+        case 5:
+        {
+            SJTabHeaderController *tabHeaderVC = [[SJTabHeaderController alloc] init];
+            [self.navigationController pushViewController:tabHeaderVC animated:YES];
+        }
+            break;
+        
 
         default:
             break;

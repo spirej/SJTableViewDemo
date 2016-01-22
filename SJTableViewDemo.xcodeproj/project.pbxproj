@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		091A9ADC1C520DB200E142AB /* SJTabSortController.m in Sources */ = {isa = PBXBuildFile; fileRef = 091A9ADB1C520DB200E142AB /* SJTabSortController.m */; };
+		093B4C2E1C50784200D807A0 /* SJTabHeaderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 093B4C2D1C50784200D807A0 /* SJTabHeaderController.m */; };
 		09CA05AD1C4C895B005FF14B /* SJDeleteTabCellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 09CA05AC1C4C895B005FF14B /* SJDeleteTabCellVC.m */; };
 		09F7E6111C488C8D00D2FC44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F7E6101C488C8D00D2FC44 /* main.m */; };
 		09F7E6141C488C8D00D2FC44 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F7E6131C488C8D00D2FC44 /* AppDelegate.m */; };
@@ -43,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		091A9ADA1C520DB200E142AB /* SJTabSortController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJTabSortController.h; sourceTree = "<group>"; };
+		091A9ADB1C520DB200E142AB /* SJTabSortController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJTabSortController.m; sourceTree = "<group>"; };
+		093B4C2C1C50784200D807A0 /* SJTabHeaderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJTabHeaderController.h; sourceTree = "<group>"; };
+		093B4C2D1C50784200D807A0 /* SJTabHeaderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJTabHeaderController.m; sourceTree = "<group>"; };
 		09CA05AB1C4C895B005FF14B /* SJDeleteTabCellVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJDeleteTabCellVC.h; sourceTree = "<group>"; };
 		09CA05AC1C4C895B005FF14B /* SJDeleteTabCellVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJDeleteTabCellVC.m; sourceTree = "<group>"; };
 		09F7E60C1C488C8D00D2FC44 /* SJTableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJTableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +107,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		091A9AD91C520D8E00E142AB /* TableViewSort */ = {
+			isa = PBXGroup;
+			children = (
+				091A9ADA1C520DB200E142AB /* SJTabSortController.h */,
+				091A9ADB1C520DB200E142AB /* SJTabSortController.m */,
+			);
+			name = TableViewSort;
+			sourceTree = "<group>";
+		};
+		093B4C2B1C50780000D807A0 /* TableViewHeader */ = {
+			isa = PBXGroup;
+			children = (
+				093B4C2C1C50784200D807A0 /* SJTabHeaderController.h */,
+				093B4C2D1C50784200D807A0 /* SJTabHeaderController.m */,
+			);
+			name = TableViewHeader;
+			sourceTree = "<group>";
+		};
 		09CA05AA1C4C8909005FF14B /* SJDeleteTabCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +157,8 @@
 		09F7E60E1C488C8D00D2FC44 /* SJTableViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				091A9AD91C520D8E00E142AB /* TableViewSort */,
+				093B4C2B1C50780000D807A0 /* TableViewHeader */,
 				09CA05AA1C4C8909005FF14B /* SJDeleteTabCell */,
 				09F7E6561C48FD5E00D2FC44 /* SJTabSearchVC */,
 				09F7E6501C48F89500D2FC44 /* BasicTableView */,
@@ -350,10 +376,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				091A9ADC1C520DB200E142AB /* SJTabSortController.m in Sources */,
 				09F7E6591C48FD9700D2FC44 /* SJTabSearchVC.m in Sources */,
 				09F7E64D1C48F84000D2FC44 /* GPStatus.m in Sources */,
 				09F7E6171C488C8D00D2FC44 /* ViewController.m in Sources */,
 				09F7E6481C48EA2200D2FC44 /* SJBasicTableView.m in Sources */,
+				093B4C2E1C50784200D807A0 /* SJTabHeaderController.m in Sources */,
 				09CA05AD1C4C895B005FF14B /* SJDeleteTabCellVC.m in Sources */,
 				09F7E6141C488C8D00D2FC44 /* AppDelegate.m in Sources */,
 				09F7E6531C48F8BD00D2FC44 /* SJCustomCellVC.m in Sources */,
@@ -502,6 +530,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SJTableViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xs.SJTableViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -513,6 +543,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SJTableViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xs.SJTableViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
